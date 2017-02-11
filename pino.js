@@ -22,7 +22,14 @@ var defaultOptions = {
   extreme: false,
   level: 'info',
   levelVal: undefined,
-  prettyPrint: false,
+  prettyPrint: {
+    timeTransOnly: false,
+    formatter: null,
+    levelFirst: false,
+    dateFormatter: 'local', // false: Epoch time stamps, local: localTime, ISO: ISO8601
+    pidAndHostname: false,  // echo pid && hostname
+    sameLevelColorMessage: true     // message color use level color
+  },
   enabled: true
 }
 
